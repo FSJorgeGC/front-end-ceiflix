@@ -1,0 +1,48 @@
+.movie-details-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* para responsividad */
+}
+
+.movie-details-container img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.movie-details-content {
+  max-width: 500px;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.movie-details-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.movie-details-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+
+@media (max-width: 768px) {
+  .movie-details-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .movie-details-content {
+    padding: 20px;
+  }
+}
